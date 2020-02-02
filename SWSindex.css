@@ -8,8 +8,7 @@ div.page_head {
 	min-height: 36pt;
 	margin: auto;
 	top: 0;
-	position: -webkit-sticky;
-	position: sticky;
+	position: fixed;
 	background: black;
 	z-index: 1;
 }
