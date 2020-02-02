@@ -76,8 +76,8 @@ div.album {
 	display:inline-block;
 	position: relative;
 	margin-top: 5vh;
-	height: 25vw;
-	min-height: 100px;
+	height: 20vw;
+	min-height: 120px;
 	width: 100vw;
 	display: block;
 	margin-bottom: 4vw;
@@ -94,7 +94,7 @@ div.album_details {
 div.show {
 	position: relative;
 	display: block;
-	width: 70%;
+	width: 65%;
 	min-width: 360px;
 	height: calc(30px + 2vw);
 	margin: auto;
@@ -103,7 +103,7 @@ div.show {
 div.show_w {
 	position: relative;
 	display: block;
-	width: 70%;
+	width: 65%;
 	min-width: 360px;
 	height: 6vw;
 	margin: auto;
@@ -136,7 +136,7 @@ div.city {
 	color: rgb(220,220,195);
 	width: 30%;
 	font-size: calc(8pt + 1.2vw);
-	left:77%
+	left:75%
 }
 
 
