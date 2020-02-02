@@ -118,7 +118,7 @@ div.date {
 	color: rgb(220,220,195);
 	width: 20%;
 	font-size: calc(25px + 1.2vw);
-	background:red;
+	background: yellow;
 }
 div.venue {
 	position: absolute;
