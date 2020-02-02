@@ -1,0 +1,137 @@
+html {
+	background:Black
+}
+div.page_head {
+	position: relative;
+	width: 100%;
+	height: 9vw;
+	margin: auto;
+	top: 0;
+}
+div.link_box {
+	position: absolute;
+	display: inline-block;
+	height: 100%;
+	width: 33%;
+	left: 0;
+	text-align: center;
+}
+div.logo {
+	position: absolute;
+	display: inline-block;
+	width: 33%;
+	height: 100%;
+	margin: auto;
+	left: 33.5%
+}
+div.media {
+	position: absolute;
+	display: inline-block;
+	height: 100%;
+	width: 33%;
+	right: 0;
+	text-align: center;
+}
+.link_inner {
+	position: relative;
+	height: 4vh;
+	width: 100%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.pagelinks {
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: calc(4px + 2vw);
+	text-decoration: none;
+	margin: 1.5vw;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.media_links {
+	display: inline-block;
+	height:1.5vw;
+	min-height:15px;
+	width: auto;
+	margin: 1.5vw;
+	margin-top: auto;
+	margin-bottom: auto;
+	text-decoration: none;
+	transform: translateY(+35%);
+}
+div.bandphoto {
+	display: block;
+}
+div.album {
+	display:inline-block;
+	position: relative;
+	margin-top: 5vh;
+	height: 25vw;
+	width: 100vw;
+	display: block;
+	margin-bottom: 4vw;
+}
+div.album_details {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	margin: auto;
+	margin-left: 5vw;
+	height: 100%;
+	width: 55%
+}
+div.show_block {
+	position: relative;
+	width: 70vw;
+	min-width: 350px;
+	margin: auto;
+}
+div.show {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 6vw;
+	margin: auto;
+	margin-bottom: 1vw;
+}
+div.show_w {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 6vw;
+	margin: auto;
+	margin-bottom: 3vw;
+}
+div.date {
+	position: absolute;
+	font-family: 'Open Sans Condensed', sans-serif;
+	display: inline-block;
+	text-align: left;
+	color: white;
+	width: 30%;
+	font-size: calc(4px + 2vw);
+}
+div.venue {
+	position: absolute;
+	font-family: 'Open Sans Condensed', sans-serif;
+	display: inline-block;
+	text-align: left;
+	color: white;
+	width: 60%;
+	font-size: calc(4px + 2vw);
+	left: 25%
+}
+div.city {
+	position: absolute;
+	font-family: 'Open Sans Condensed', sans-serif;
+	display: inline-block;
+	text-align: left;
+	color: white;
+	width: 45%;
+	font-size: calc(4px + 2vw);
+	left:85%
+}
+
+
