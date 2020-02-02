@@ -16,6 +16,9 @@ div.link_box {
 	left: 0;
 	text-align: center;
 }
+a {
+	text-decoration: none;
+}
 div.logo {
 	position: absolute;
 	display: inline-block;
