@@ -73,23 +73,14 @@ div.bandphoto {
 	display: block;
 }
 div.album {
-	display:inline-block;
+	display: block;
 	position: relative;
 	margin-top: 5vh;
-	height: 20vw;
-	min-height: 120px;
-	width: 100vw;
-	display: block;
+	width: 65vw;
+	min-width: 370px;
 	margin-bottom: 4vw;
-}
-div.album_details {
-	display: inline-block;
-	position: absolute;
-	top: 0;
-	margin: auto;
-	margin-left: 5vw;
-	height: 100%;
-	width: 55%
+	margin-left:auto;
+	margin-right:auto;
 }
 div.show {
 	position: relative;
