@@ -95,7 +95,7 @@ div.show {
 	position: relative;
 	display: block;
 	width: 70%;
-	min-width: 620px;
+	min-width: 550px;
 	height: calc(30px + 2vw);
 	margin: auto;
 	margin-bottom: 0px;
@@ -105,7 +105,7 @@ div.show_w {
 	position: relative;
 	display: block;
 	width: 70%;
-	min-width: 620px;
+	min-width: 550px;
 	height: 6vw;
 	margin: auto;
 	margin-bottom: 40px;
@@ -117,8 +117,8 @@ div.date {
 	text-align: left;
 	color: rgb(220,220,195);
 	width: 20%;
-	font-size: calc(25px + 1.2vw);
-	background: yellow;
+	font-size: calc(8pt + 1.2vw);
+	background: purple;
 }
 div.venue {
 	position: absolute;
@@ -127,7 +127,7 @@ div.venue {
 	text-align: left;
 	color: rgb(220,220,195);
 	width: 60%;
-	font-size: calc(25px + 1.2vw);
+	font-size: calc(8pt + 1.2vw);
 	left: 25%
 }
 div.city {
@@ -137,7 +137,7 @@ div.city {
 	text-align: left;
 	color: rgb(220,220,195);
 	width: 30%;
-	font-size: calc(25px + 1.2vw);
+	font-size: calc(8pt + 1.2vw);
 	left:77%
 }
 
