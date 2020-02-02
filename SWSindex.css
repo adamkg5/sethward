@@ -81,6 +81,11 @@ div.page_block {
 	min-width:360px;
 	margin:auto;
 }
+div.page_block_n {
+	width:35vw;
+	min-width:330px;
+	margin:auto;
+}
 div.album {
 	display: block;
 	position: relative;
