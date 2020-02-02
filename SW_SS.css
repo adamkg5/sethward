@@ -9,7 +9,16 @@ html {
   position: relative;
   margin: auto;
 }
-
+:root:before {
+  content: url(photos/sethward15.jpg)
+           url(bandphoto.jpg)
+           url(photos/sethward13.jpg);
+  /* partial fallback */
+  background-image: url(bandphoto.jpg);
+  visibility: hidden;
+  position: absolute;
+  left: -999em;
+}
 /* Hide the images by default */
 .mySlides {
   display: none;
