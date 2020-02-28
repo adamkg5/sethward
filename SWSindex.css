@@ -76,8 +76,13 @@ a.media_links: hover {
 div.bandphoto {
 	display: block;
 }
+#image_block {
+	width:50vw;
+	min-width:360px;
+	margin:auto;
+}
 div.page_block {
-	width:55vw;
+	width:50vw;
 	min-width:360px;
 	margin:auto;
 }

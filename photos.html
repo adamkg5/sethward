@@ -7,11 +7,14 @@
 		<link rel="stylesheet" href="SWSindex.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
 		<link rel="shortcut icon" href="skull_icon.ico" type="image/x-icon"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript" src="functions.js"></script>
+		<script type="text/javascript" src="image_galleries.js"></script>
 	</head>
 	<div class="page_head">
 		<div class="link_box">
 			<div class="link_inner">
-				<a class="pagelinks" href="index.htm">main</a>
+				<a class="pagelinks" href="index.html">main</a>
 				<a class="pagelinks" href="shows.html">news</a>
 				<a class="pagelinks" href="photos.html">shows</a>
 			</div>
@@ -36,12 +39,16 @@
 			</div>
 		</div>
 	</div>
-	<div class="page_block_n">
-		<a href="studio.html">
-			<img src="PicLinkStudio.png" style="position:block;width:100%;height:auto;margin-left:auto;margin-right:auto;margin-top:8vh;">
-		</a>
-		<a href="hoots.html">
-			<img src="PicLinkHoots.png" style="position:block;width:100%;height:auto;margin:auto">
-		</a>
+	<div id="gallery_block" class="page_block_n">
 	</div>
+	<script>
+	var gallery;
+	for (gallery of Object.keys(image_galleries)) {
+		console.log(gallery)
+		objGallery = image_galleries[gallery];
+		var txtGalleryLink = "<a href='gallery.html?"+gallery+"'>";
+		txtGalleryLink += "<img src='"+objGallery.link_img+ "' style='width:100%'></a>";
+		$("#gallery_block").append(txtGalleryLink);
+	}
+	</script>
 </html>

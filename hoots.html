@@ -7,6 +7,9 @@
 		<link rel="stylesheet" href="SWSindex.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
 		<link rel="shortcut icon" href="skull_icon.ico" type="image/x-icon"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript" src="functions.js"></script>
+		<script type="text/javascript" src="image_galleries.js"></script>
 	</head>
 	<div class="page_head">
 		<div class="link_box">
@@ -36,34 +39,22 @@
 			</div>
 		</div>
 	</div>
-	<div class="page_block">
-		<img src="seth ward 6.jpg" style="width:100%">
+	<div id="image_block" style='position:relative;'>
 	</div>
-	<div class="page_block">
-		<img src="seth ward4 .jpg" style="width:100%">
-	</div>
-	<div class="page_block">
-		<img src="sethward15.jpg" style="width:100%">
-	</div>
-	<div class="page_block">
-		<img src="sethward14.jpg" style="width:100%">
-	</div>
-	<div class="page_block">
-		<img src="sethward2.jpg" style="width:100%">
-	</div>
-	<div class="page_block">
-		<img src="seth ward8.jpg" style="width:100%">
-	</div>
-	<div class="page_block">
-		<img src="seth ward 7.jpg" style="width:100%">
-	</div>
-	<div class="page_block">
-		<img src="seth ward 9.jpg" style="width:100%">
-	</div>
-	<div class="page_block">
-		<img src="sethward21.jpg" style="width:100%">
-	</div>
-	<div class="page_block">
-		<img src="sethward20.jpg" style="width:100%">
-	</div>
+	<script>
+	function loadImages(galleryName) {
+		var gallery = image_galleries[galleryName];
+		var dirGallery = gallery.folder;
+		var listImages = gallery.images;
+		var i;
+		var strImage ;
+		console.log(dirGallery)
+		for (i=0; i<listImages.length; i++) {
+			console.log(listImages[i])
+			strImage = "<img src='"+dirGallery+"/"+listImages[i]+"' style='width:100%'>";
+			$("#image_block").append(strImage);
+			}
+	}
+	loadImages("hoots")
+	</script>
 </html>
