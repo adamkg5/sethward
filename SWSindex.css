@@ -71,12 +71,6 @@ div.media {
 	text-decoration: none;
 	transform: translateY(+35%);
 }
-a.show:hover {
-	color:white;
-}
-a:hover {
-	color: white;
-}
 div.bandphoto {
 	display: block;
 }
