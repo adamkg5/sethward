@@ -6,6 +6,7 @@
 		<title>Photos &#124 Seth Ward & The Silence</title>
 		<link rel="stylesheet" href="SWSindex.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
 		<link rel="shortcut icon" href="skull_icon.ico" type="image/x-icon"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script type="text/javascript" src="functions.js"></script>
@@ -16,7 +17,7 @@
 			<div class="link_inner">
 				<a class="pagelinks" href="index.html">main</a>
 				<a class="pagelinks" href="shows.html">news</a>
-				<a class="pagelinks" href="photos.html">shows</a>
+				<a class="pagelinks" href="photos.html">music</a>
 			</div>
 		</div>
 		<div class="logo">
@@ -40,6 +41,7 @@
 		</div>
 	</div>
 	<div id="gallery_block" class="page_block_n">
+		<img src='galleries_title.png' style="display:block;width:60%;margin-left:auto;margin-right:auto;margin-top:5vw;">
 	</div>
 	<script>
 	var gallery;
@@ -47,7 +49,8 @@
 		console.log(gallery)
 		objGallery = image_galleries[gallery];
 		var txtGalleryLink = "<a href='gallery.html?"+gallery+"'>";
-		txtGalleryLink += "<img src='"+objGallery.link_img+ "' style='width:100%'></a>";
+		txtGalleryLink += "<div class='gallery_label'>"+objGallery.title+"</div>"
+		txtGalleryLink += "<img src='"+objGallery.link_img+ "' style='width:100%;'></a>";
 		$("#gallery_block").append(txtGalleryLink);
 	}
 	</script>

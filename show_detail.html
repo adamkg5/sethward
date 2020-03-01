@@ -16,8 +16,8 @@
 		<div class="link_box">
 			<div class="link_inner">
 				<a class="pagelinks" href="index.html">main</a>
-				<a class="pagelinks" href="shows.html">news</a>
-				<a class="pagelinks" href="photos.html">shows</a>
+				<a class="pagelinks" href="news.html">news</a>
+				<a class="pagelinks" href="photos.html">photos</a>
 			</div>
 		</div>
 		<div class="logo">
@@ -53,8 +53,11 @@
 	var show_txt = decodeURIComponent(window.location.search);
 	show_txt = show_txt.substring(1);
 	show = shows[show_txt]
-	$("#venPhoto").append("<img src='"+show.ven_img_link+"' style='width:100%;'>");
+	$("#venPhoto").append("<img src='dirVenuePhotos/"+show.ven_img_link+"' style='width:100%;'>");
 	$("#venDetail_head").append("<a href='"+show.ven_link+"' style='color:white' target='blank'>"+show.venue.toUpperCase()+"</a>");
+	if (show.with.length > 1) {
+	$("#venDetail_lower").append(show.with+"<br>");
+	}
 	$("#venDetail_lower").append(show.city+"<br>");
 	$("#venDetail_lower").append(show.date+"<br>");
 	$("#venDetail_lower").append(show.start_time+"<br>");
