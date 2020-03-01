@@ -3,20 +3,21 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Seth Ward & The Silence</title>
+		<title>Photos &#124 Seth Ward & The Silence</title>
 		<link rel="stylesheet" href="SWSindex.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
 		<link rel="shortcut icon" href="skull_icon.ico" type="image/x-icon"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script type="text/javascript" src="functions.js"></script>
 		<script type="text/javascript" src="shows.js"></script>
 	</head>
-	<div class="page_head">
+		<div class="page_head">
 		<div class="link_box">
 			<div class="link_inner">
-				<a class="pagelinks" href="shows.html">shows</a>
+				<a class="pagelinks" href="index.html">main</a>
 				<a class="pagelinks" href="shows.html">news</a>
-				<a class="pagelinks" href="photos.html">photos</a>
+				<a class="pagelinks" href="photos.html">shows</a>
 			</div>
 		</div>
 		<div class="logo">
@@ -39,32 +40,23 @@
 			</div>
 		</div>
 	</div>
-	<div class="bandphoto">
-		<img src="BandPhotoWide.jpg" style="width:100%;height:auto;">
-	</div>
-	<div class="album">
-		<div class="album1" style="display:inline-block;width:49%;height:20vw;min-height:120px;">
-			<img src="album_art.jpg" style="position:absolute;top:1vw;height:90%;width:auto;margin-left:4%;">
+	<div id='venOuter' style='position:relative;'>
+		<div id='venPhoto'></div>
+		<div id='venDetails' style='height:auto;'>
+			<div style='margin:auto;'>
+				<div id='venDetail_head' style=';left:0;'></div>
+				<div id='venDetail_lower'></div>
+			</div>
 		</div>
-		<div class="album2" style="display:inline-block;width:49%;height:20vw;min-height:150px;">
-			<img src="album_details.png" style="position:absolute;width:40%;height:auto;margin-left:-5%;margin-top:calc(30px + 1.5vw);">
-		</div>
-	</div>
-	<div style="width:70vw;min-width:350px;height:7vw;min-height:50px;margin-bottom:2vw;margin-left:auto;margin-right:auto;">
-		<img src="shows_title.png" style="display:block;margin:auto;height:100%;width:auto;">
-	</div>
-	<div id="show_block">
 	</div>
 	<script>
-	var show_i;
-	for (show_i of Object.keys(shows)) {
-		var show = shows[show_i];;
-		var showText = "<a class='show' href='show_detail.html?"+show_i+"'>"
-		showText += "<div class='date'>"+show.date+"</div>"
-		showText += "<div class='venue'>"+show.venue+"</div>"
-		showText += "<div class='city'>"+show.city+"</div>"
-		showText +="</a>"
-		$("#show_block").append(showText);
-	}
+	var show_txt = decodeURIComponent(window.location.search);
+	show_txt = show_txt.substring(1);
+	show = shows[show_txt]
+	$("#venPhoto").append("<img src='"+show.ven_img_link+"' style='width:100%;'>");
+	$("#venDetail_head").append("<a href='"+show.ven_link+"' style='color:white' target='blank'>"+show.venue.toUpperCase()+"</a>");
+	$("#venDetail_lower").append(show.city+"<br>");
+	$("#venDetail_lower").append(show.date+"<br>");
+	$("#venDetail_lower").append(show.start_time+"<br>");
 	</script>
 </html>

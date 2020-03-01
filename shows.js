@@ -1,6 +1,5 @@
-shows = [
-	{
-		"show_id": "Shamrock03.13.2020",
+shows = {
+	"Shamrock03132020": {
 		"date": "03.13.2020",
 		"venue": "74th Annual St. Patrick's Day Celebration",
 		"city": "Shamrock, TX",
@@ -10,8 +9,7 @@ shows = [
 		"with": "",
 		"note_text": "At Shamrock Country Club"
 	},
-	{
-		"show_id": "Perryton03.21.2020",
+	"Perryton03212020": {
 		"date": "03.21.2020",
 		"venue": "The Spot",
 		"city": "Perryton, TX",
@@ -21,8 +19,7 @@ shows = [
 		"with": "",
 		"note_text": ""
 	},
-	{
-		"show_id": "Snook04.04.2020",
+	"Snook04042020": {
 		"date": "04.04.2020",
 		"venue": "Chilifest Music Festival",
 		"city": "Snook, TX",
@@ -32,8 +29,7 @@ shows = [
 		"with": "",
 		"note_text": ""
 	},
-	{
-		"show_id": "Lubbock05.01.2020",
+	"Lubbock05012020": {
 		"date": "05.01.2020",
 		"venue": "The Blue Light Live",
 		"city": "Lubbock, TX",
@@ -43,8 +39,7 @@ shows = [
 		"with": "w/ Read Southall",
 		"note_text": ""
 	},
-	{
-		"show_id": "Midland05.02.2020",
+	"Midland05022020": {
 		"date": "05.02.2020",
 		"venue": "Lone Star Bar",
 		"city": "Midland, TX",
@@ -54,8 +49,7 @@ shows = [
 		"with": "",
 		"note_text": ""
 	},
-	{
-		"show_id": "Canadian05.09.2020",
+	"Canadian05092020": {
 		"date": "05.09.2020",
 		"venue": "Canadian River Music Fest",
 		"city": "Canadian, TX",
@@ -65,8 +59,7 @@ shows = [
 		"with": "",
 		"note_text": ""
 	},
-	{
-		"show_id": "Pampa05.16.2020",
+	"Pampa05162020": {
 		"date": "05.16.2020",
 		"venue": "Cody Crockett Memorial Ranch Rodeo Dance",
 		"city": "Pampa, TX",
@@ -76,8 +69,7 @@ shows = [
 		"with": "",
 		"note_text": ""
 	},
-	{
-		"show_id": "Miami06.06.2020",
+	"Miami06062020": {
 		"date": "06.06.2020",
 		"venue": "National Cow Calling & Steak Contest",
 		"city": "Miami, TX",
@@ -87,8 +79,7 @@ shows = [
 		"with": "",
 		"note_text": ""
 	},
-	{
-		"show_id": "Woodward06.12.2020",
+	"Woodward06122020": {
 		"date": "06.12.2020",
 		"venue": "Woodward Elks Rodeo",
 		"city": "Woodward, OK",
@@ -98,8 +89,7 @@ shows = [
 		"with": "w/ William Clark Green",
 		"note_text": ""
 	},
-	{
-		"show_id": "Dalhart08.06.2020",
+	"Dalhart08062020": {
 		"date": "08.06.2020",
 		"venue": "XIT Rodeo and Reunion",
 		"city": "Dalhart, TX",
@@ -109,8 +99,7 @@ shows = [
 		"with": "",
 		"note_text": ""
 	},
-	{
-		"show_id": "Dalhart08.07.2020",
+	"Dalhart08072020": {
 		"date": "08.07.2020",
 		"venue": "XIT Rodeo and Reunion",
 		"city": "Dalhart, TX",
@@ -120,8 +109,7 @@ shows = [
 		"with": "w/ TBA",
 		"note_text": ""
 	},
-	{
-		"show_id": "Dalhart08.08.2020",
+	"Dalhart08082020": {
 		"date": "08.08.2020",
 		"venue": "XIT Rodeo and Reunion",
 		"city": "Dalhart, TX",
@@ -131,4 +119,4 @@ shows = [
 		"with": "w/ TBA",
 		"note_text": ""
 	}
-]
+}
