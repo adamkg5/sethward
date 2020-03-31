@@ -42,7 +42,6 @@
 		</div>
 	</div>
 	<div id="bandphoto">
-		<img src="RoadsidePhotoNarrow.jpg" style="width:100%;height:auto">
 	</div>
 	<div class="album">
 		<div class="album1">
@@ -85,6 +84,8 @@
 		}
 	}
 	function headerWide() {
+		$("#bandphoto").empty();
+		$("#bandphoto").append("<img src='RoadsidePhotoNarrow.jpg' style='width:100%;height:auto'>");
 		strLinks = "<div class='link_inner'>"
 		strLinks += "<a class='pagelinks' href='shows.html'>music</a>"
 		strLinks += "<a class='pagelinks' href='shows.html'>news</a>"
@@ -103,6 +104,8 @@
 		$("#media").append(strMedia);
 	}
 	function headerNarrow() {
+		$("#bandphoto").empty();
+		$("#bandphoto").append("<img src='RoadsidePhotoFull.jpg' style='width:100%;height:auto'>");
 		$("#link_box").empty();
 		$("#media").empty();
 		strMedia = "<div class='link_inner'>"
