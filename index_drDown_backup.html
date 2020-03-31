@@ -20,27 +20,6 @@
 		<div id="media">
 		</div>
 	</div>
-	<div class="dropdown">
-		<div id="myDropdown" class="dropdown-content">
-			<a href="music.html">music</a>
-			<a href="photos.html">photos</a>
-			<a href="bio.html">bio</a>
-			<div id="menu_media">
-				<a href='https://www.facebook.com/Sethwardmusic/' target='blank'>
-					<img class='menuMediaLinks' src='facebook.png'>
-				</a>
-				<a href='https://open.spotify.com/artist/55kr1RaQ3UONiM6f2AzeHt' target='blank'>
-					<img class='menuMediaLinks' src='spotify.png'>
-				</a>
-				<a href='https://www.youtube.com/channel/UCAw3JHYo2YXhL5hu62ZqD3A' target='blank'>
-					<img class='menuMediaLinks' src='youtube.png'>
-				</a>
-				<a href='https://music.apple.com/us/artist/seth-ward/1455880387' target='blank'>
-					<img class='menuMediaLinks' src='apple_music.png'>
-				</a>
-			</div>
-		</div>
-	</div>
 	<div id="bandphoto">
 		<img src="RoadsidePhotoNarrow.jpg" style="width:100%;height:auto">
 	</div>
@@ -69,21 +48,6 @@
 		showText +="</a>"
 		$("#show_block").append(showText);
 	}
-	function showMenu() {
-		document.getElementById("myDropdown").classList.toggle("show");
-	}
-	window.onclick = function(event) {
-		if (!event.target.matches('.media_links')) {
-			var dropdowns = document.getElementsByClassName("dropdown-content");
-			var i;
-			for (i = 0; i < dropdowns.length; i++) {
-				var openDropdown = dropdowns[i];
-				if (openDropdown.classList.contains('show')) {
-					openDropdown.classList.remove('show');
-				}
-			}
-		}
-	}
 	function headerWide() {
 		strLinks = "<div class='link_inner'>"
 		strLinks += "<a class='pagelinks' href='shows.html'>music</a>"
@@ -106,8 +70,8 @@
 		$("#link_box").empty();
 		$("#media").empty();
 		strMedia = "<div class='link_inner'>"
-		strMedia += ""
-		strMedia += "<img src='hamburger.png' onclick='showMenu()' class='media_links' src='hamburger.png'></div>"
+		strMedia += "<a href='shows.html'>"
+		strMedia += "<img class='media_links' src='hamburger.png'></a></div>"
 		$("#media").append(strMedia);
 	}
 	function headerStyle(vp) {
